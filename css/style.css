@@ -162,26 +162,56 @@ nav{
     grid-area: footer;
 }
 
-.body-container {
+.adopcion-container {
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
     grid-template-columns: auto; 
-    grid-template-rows: 1fr 0.8fr  1.2fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr 0.1fr;
     grid-template-areas: 
       "header"
-      "adpcion-section1"
+      "adopcion-section1"
       "adopcion-section2"
       "adopcion-section3"
       "footer"; 
   }
+  @media screen and (max-width: 768px) {
+    .adopcion-container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: auto; 
+        grid-template-rows: 1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+          "header"
+          "adopcion-section1"
+          "adopcion-section2"
+          "adopcion-section3"
+          "footer"; 
+      }
+}
+@media screen and (max-width: 480px) {
+    .adopcion-container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: auto; 
+        grid-template-rows: 1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+          "header"
+          "adopcion-section1"
+          "adopcion-section2"
+          "adopcion-section3"
+          "footer"; 
+      }
+}
+
   .header { grid-area: header; }
   .adpcion-section1 { grid-area: adpcion-section1; }
   .adopcion-section2 { grid-area: adopcion-section2; }
   .adopcion-section3 { 
     grid-area: adopcion-section3; 
     box-shadow: 0px 0px 12px #0001;
-    width: 700px;
   }
     /*Formularios*/
 .form {
@@ -207,4 +237,4 @@ input {
     text-transform: uppercase;
     font-weight: bold;  
 }
-  .footer { grid-area: footer; }
+  .footer { grid-area: footer;}
