@@ -1,231 +1,320 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
+    font-weight: bold;
     text-align: left;
     padding: 10px;
-    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px;
+    margin: auto
+}
 
-.index-container{
+.subtitle-page {
+    color: #A67D03;
+    text-align: center;
+}
+
+/* este es el container */
+.index-container {
     width: 100%;
 
-    display: grid; 
-    grid-template-columns: auto auto; 
-    grid-template-rows: auto auto auto auto; 
-    grid-template-areas: 
-    "header header"
-    "section1 section2"
-    "section1 section3"
-    "footer footer"; 
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header"
+        "section1 section2"
+        "section1 section3"
+        "footer footer";
 }
 
-
+/* este es el container en 768 */
 @media screen and (max-width: 768px) {
-    .index-container{
+    .index-container {
         width: 100%;
-    
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto auto auto auto auto; 
-        grid-template-areas: 
-        "header"
-        "section1"
-        "section2" 
-        "section3"
-        "footer"; 
-    }
-}
-@media screen and (max-width: 480px) {
-    .index-container{
-        width: 100%;
-    
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto auto auto auto auto; 
-        grid-template-areas: 
-        "header"
-        "section1"
-        "section2" 
-        "section3"
-        "footer"; 
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
     }
 }
 
-.grid-item{
+/* este es el container en 480 */
+@media screen and (max-width: 480px) {
+    .index-container {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+    }
+}
+
+.grid-item {
     margin: 10px;
     padding: 10px;
-    text-align: center;
     box-shadow: 0px 0px 12px #0001;
-    background-color: #ededed;
-    h2{
-        font-size: 24px;
-        color:#87ceeb;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        margin-top: 20px;
-        margin-bottom: 20px; 
-     }
-    
+    background-color: #ededed54;
 }
-.header { 
+
+/* este es el header */
+.header {
     grid-area: header;
+    background-image: url(../images/panoramicaperritos.jpg);
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    color: whitesmoke;
+
 }
-.images-flex{
+
+.images-flex {
     display: flex;
     flex-direction: row;
 }
+
 /*Socials*/
-.socials{
-    background-color: skyblue;
+.socials {
+    background-color: #afafaf80;
     text-align: left;
     padding: 10px;
     margin-bottom: 15px;
 }
-.socials li{
+
+.socials li {
     display: inline-block;
 }
-.socials li a{
+
+.socials li a {
     text-decoration: none;
     padding: 15px;
-    text-align: left;
     color: white;
 }
-.socials li img{
+
+.socials li img {
     height: 20px;
     width: 20px;
 }
+
 /*Navigation bar*/
-nav{
-    margin-bottom: 10px;
+nav {
+    margin-top: 10px;
     width: auto;
-    }
-    .menu{
-        background-color: skyblue;
-        text-align: right;
-    }
-    .menu li{
-        display: inline-block;
-        text-align: center;
-        margin: 20px;
-        text-transform: uppercase;   
-    }
-    .menu li a{
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        font-style: normal;
-        padding: 15px;
-    }
-    .menu li a:hover{
-        background-color: rgba(255, 255, 255, 0.363);
-        border-radius: 20px;
-        text-decoration: underline whitesmoke;
-    }
-.section1 { 
-    grid-area: section1;
-
 }
-.paragraph{
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
+
+.menu {
+    background-color: #7c7c00;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
     text-align: center;
-    width: 60%;
-    height: 100%px;
-    border-radius: 40px;
-    padding: 15px;
-    margin: auto
+    margin: 0px 20px;
+    text-transform: uppercase;
 }
 
-.section2{ 
-    grid-area: section2;
+.menu li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 0.875rem;
+    font-style: normal;
+    padding: 14px 30px;
 }
-.section2 img{
+
+.menu li a:hover {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* section1 de index */
+.section1 {
+    grid-area: section1;
+}
+
+.carousel-inner {
+    padding: 10px;
+    background-color:#5e5e00a4;
+}
+
+/* section2 de index */
+.section2 {
+    grid-area: section2;
+    height: 45vh;
+}
+
+.section2 img {
     width: 30px;
     height: 30px;
 }
-.section2 a{
+.section2 a {
     text-decoration: none;
     color: #333;
 }
-
-.section3 { 
-    grid-area: section3;
+.section2 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.footer { 
+.shop-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.section2 li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color:#7c7c00;
+    font-weight: bold;
+    font-size: 0.875rem;
+    font-style: normal;
+    padding: 14px 30px;
+}
+/* section3 de index */
+.section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps-box {
+    margin-top: 20px;
+    align-self: center;
+}
+
+/* footer de index y pages */
+.footer {
     grid-area: footer;
 }
 
-.adopcion-container {
-    display: grid; 
-
-    grid-template-columns: auto; 
-    grid-template-rows: auto 0.1fr 1fr 0.1fr;
-    grid-template-areas: 
-      "header"
-      "adopcion-section1"
-      "adopcion-section2"
-      "adopcion-section3"
-      "footer"; 
-  }
-  @media screen and (max-width: 768px) {
-    .adopcion-container {
-        display: grid; 
-
-        grid-template-columns: auto; 
-        grid-template-rows: auto 0.1fr 1fr 0.1fr;
-        grid-template-areas: 
-          "header"
-          "adopcion-section1"
-          "adopcion-section2"
-          "adopcion-section3"
-          "footer"; 
-      }
+.footer {
+    grid-area: footer;
+    background-color: #7c7c00;
+    display: flex;
+    flex-direction: row;
 }
+
+.footer-text {
+    margin: 0px 40px;
+    color: whitesmoke;
+}
+
+
+/* esta es la page de adopcion */
+.adopcion-container {
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+        "header"
+        "adopcion-section1"
+        "adopcion-section2"
+        "adopcion-section3"
+        "footer";
+}
+
+@media screen and (max-width: 768px) {
+    .adopcion-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto 0.1fr 1fr 0.1fr;
+        grid-template-areas:
+            "header"
+            "adopcion-section1"
+            "adopcion-section2"
+            "adopcion-section3"
+            "footer";
+    }
+}
+
 @media screen and (max-width: 480px) {
     .adopcion-container {
-        display: grid; 
+        display: grid;
 
-        grid-template-columns: auto; 
+        grid-template-columns: auto;
         grid-template-rows: auto 0.1fr 1fr 0.1fr;
-        grid-template-areas: 
-          "header"
-          "adopcion-section1"
-          "adopcion-section2"
-          "adopcion-section3"
-          "footer"; 
-      }
+        grid-template-areas:
+            "header"
+            "adopcion-section1"
+            "adopcion-section2"
+            "adopcion-section3"
+            "footer";
+    }
 }
 
-  .header { grid-area: header; }
-  .adopcion-section1 { 
+/* este es el header de adopcion */
+.header {
+    grid-area: header;
+}
+
+/* section1 de adopcion */
+.adopcion-section1 {
     grid-area: adopcion-section1;
 }
-.subtitle-page{
-    text-align: center;
+
+/* section2 de adocpcion */
+.adopcion-section2 {
+    grid-area: adopcion-section2;
 }
-  .adopcion-section2 { grid-area: adopcion-section2; }
-  .adopcion-section3 { 
-    grid-area: adopcion-section3; 
-    box-shadow: 0px 0px 12px #0001;
-  }
-    /*Formularios*/
+
+/* section3 de adopcion */
+.adopcion-section3 {
+    grid-area: adopcion-section3;
+}
+
+/*Formularios*/
 .form {
     background-color: #ededed;
     padding: 20px 0;
     max-width: 500px;
     margin: auto;
 }
+
 .form_input {
     padding: 6px 20px;
 }
+
 input {
     width: 100%;
     box-sizing: border-box;
@@ -234,43 +323,22 @@ input {
     border-left: 3px solid #999;
     box-shadow: 0px 0px 12px #0001;
 }
-.form-button{
+
+.form-button {
     padding: 5px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: bold;  
+    font-weight: bold;
 }
-.footer { 
-    grid-area: footer;
-    background-color: #B4E3F2;
-    display: flex;
-    flex-direction: row;
-}
-.footer-text {
-    margin: 0px 40px
-}
+
 /*table*/
-.table{
+.table {
     width: 100%;
     border-collapse: collapse;
 }
-.table td{
+
+.table td {
     border: 1px solid rgb(128, 128, 128);
     text-align: center;
     padding: 8px;
-}
-.subtitle-page{
-    text-transform: uppercase;
-    background-color: skyblue;
-    color: whitesmoke;
-    text-align: center;
-    padding: 15px;
-    border: 20px;
-    margin-block: 15px;    
-}
-.subtitles-h3{
-    color: skyblue;
-    font-size: 20px;
-    margin: 15px 0 15px 0;
-    font-weight: bold;
 }
