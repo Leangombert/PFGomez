@@ -13,12 +13,19 @@ h6 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: left;
     padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle-index {
+    color:#7c7c00;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -33,12 +40,20 @@ h1 {
     margin: auto
 }
 
-.subtitle-page {
-    color: #A67D03;
+.paragraph-title {
+    font-family: "Montserrat", sans-serif;
+    color: #7c7c00;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
     text-align: center;
+    border-radius: 40px;
+    padding: 10px;
+    margin: auto
 }
 
-/* este es el container */
+
+/* este es el container de index */
 .index-container {
     width: 100%;
 
@@ -52,7 +67,7 @@ h1 {
         "footer footer";
 }
 
-/* este es el container en 768 */
+/* este es el container en 768 de index*/
 @media screen and (max-width: 768px) {
     .index-container {
         width: 100%;
@@ -69,7 +84,7 @@ h1 {
     }
 }
 
-/* este es el container en 480 */
+/* este es el container en 480 de index*/
 @media screen and (max-width: 480px) {
     .index-container {
         width: 100%;
@@ -101,7 +116,7 @@ h1 {
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
+    background-position: top;
     color: whitesmoke;
 
 }
@@ -173,7 +188,7 @@ nav {
 
 .carousel-inner {
     padding: 10px;
-    background-color:#5e5e00a4;
+    background-color: #5e5e00a4;
 }
 
 /* section2 de index */
@@ -186,29 +201,34 @@ nav {
     width: 30px;
     height: 30px;
 }
+
 .section2 a {
     text-decoration: none;
     color: #333;
 }
+
 .section2 li {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .shop-box {
     display: flex;
     flex-direction: column;
     align-content: center;
 }
+
 .section2 li a {
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    color:#7c7c00;
+    color: #7c7c00;
     font-weight: bold;
     font-size: 0.875rem;
     font-style: normal;
     padding: 14px 30px;
 }
+
 /* section3 de index */
 .section3 {
     grid-area: section3;
@@ -224,10 +244,6 @@ nav {
 /* footer de index y pages */
 .footer {
     grid-area: footer;
-}
-
-.footer {
-    grid-area: footer;
     background-color: #7c7c00;
     display: flex;
     flex-direction: row;
@@ -238,13 +254,26 @@ nav {
     color: whitesmoke;
 }
 
+/* Title design de los titulos de pages */
+.subtitle-descriptions-image {
+    background-image: url(../images/subtitles-descriptions-image.jpg);
+    background-attachment: fixed;
+    height: 10vh;
+}
 
-/* esta es la page de adopcion */
+.subtitle-page {
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* este es el contenedor de adopcion */
 .adopcion-container {
     display: grid;
 
     grid-template-columns: auto;
-    grid-template-rows: auto 0.1fr 1fr 0.1fr;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         "header"
         "adopcion-section1"
@@ -258,7 +287,7 @@ nav {
         display: grid;
 
         grid-template-columns: auto;
-        grid-template-rows: auto 0.1fr 1fr 0.1fr;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "header"
             "adopcion-section1"
@@ -273,7 +302,7 @@ nav {
         display: grid;
 
         grid-template-columns: auto;
-        grid-template-rows: auto 0.1fr 1fr 0.1fr;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "header"
             "adopcion-section1"
@@ -341,4 +370,139 @@ input {
     border: 1px solid rgb(128, 128, 128);
     text-align: center;
     padding: 8px;
+}
+
+/* esta es la page de Colaboración */
+.colaboracion-container {
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "colaboracion-section1"
+        "colaboracion-section2"
+        "colaboracion-section3"
+        "footer";
+}
+
+@media screen and (max-width: 768px) {
+    .colaboracion-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "colaboracion-section1"
+            "colaboracion-section2"
+            "colaboracion-section3"
+            "footer";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .colaboracion-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "colaboracion-section1"
+            "colaboracion-section2"
+            "colaboracion-section3"
+            "footer";
+    }
+}
+
+/* esta es la page de Padrino */
+.padrino-container {
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "padrino-section1"
+        "padrino-section2"
+        "padrino-section3"
+        "footer";
+}
+
+@media screen and (max-width: 768px) {
+    .padrino-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "padrino-section1"
+            "padrino-section2"
+            "padrino-section3"
+            "footer";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .padrino-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "padrino-section1"
+            "padrino-section2"
+            "padrino-section3"
+            "footer";
+    }
+}
+
+/* esta es la page de Contacto */
+.contacto-container {
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "contacto-section1"
+        "contacto-section2"
+        "contacto-section3"
+        "contacto-section4"
+        "footer";
+}
+
+@media screen and (max-width: 768px) {
+    .contacto-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "contacto-section1"
+            "contacto-section2"
+            "contacto-section3"
+            "contacto-section4"
+            "footer";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacto-container {
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "contacto-section1"
+            "contacto-section2"
+            "contacto-section3"
+            "contacto-section4"
+            "footer";
+    }
 }
