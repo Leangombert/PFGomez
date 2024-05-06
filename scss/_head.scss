@@ -1,0 +1,73 @@
+/* este es el header */
+.header {
+  grid-area: header;
+  background-image: url(../images/panoramicaperritos.jpg);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: whitesmoke;
+
+  .images-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*Socials*/
+  .socials {
+    background-color: #afafaf80;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  /*Navigation bar*/
+  nav {
+    margin-top: 10px;
+    width: auto;
+
+    .menu {
+      background-color: $greenTheme;
+      text-align: right;
+
+      li {
+        display: inline-block;
+        text-align: center;
+        margin: 0px 20px;
+        text-transform: uppercase;
+
+        a {
+          font-family: "Montserrat", sans-serif;
+          text-decoration: none;
+          color: $lightWhite;
+          font-size: 0.875rem;
+          font-style: normal;
+          padding: 14px 30px;
+
+          &:hover {
+            color: $strongWhite;
+            font-weight: bold;
+            transition-property: all;
+            transition-duration: 0.1s;
+          }
+        }
+      }
+    }
+  }
+}

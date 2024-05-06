@@ -1,0 +1,17 @@
+/* footer de index y pages */
+.footer {
+  grid-area: footer;
+  background-color: $greenTheme;
+  display: flex;
+  flex-direction: row;
+  a {
+    text-decoration: none;
+    color: $lightWhite;
+    font-weight: bold;
+  }
+
+  .footer-text {
+    margin: 0px 40px;
+    color: $lightWhite;
+  }
+}

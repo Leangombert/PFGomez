@@ -1,0 +1,68 @@
+/*Formularios*/
+.form {
+  font-family: $fontletter;
+  background-color: $lightWhite;
+  padding: 5px 0;
+  max-width: 60vh;
+  margin: 2vw auto;
+  border-top: 3px solid $greenTheme;
+
+  fieldset {
+    legend {
+      text-align: center;
+    }
+  }
+  .form-input {
+    padding: 6px 20px;
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      border: none;
+      border-left: 3px solid $greenTheme;
+    }
+    textarea {
+      box-sizing: border-box;
+      border: none;
+      border-left: 3px solid $greenTheme;
+      min-width: 100%;
+      min-height: 100px;
+      max-height: 200px;
+      resize: vertical;
+    }
+  }
+  .form-button {
+    padding: 4px;
+    color: $lightWhite;
+    background-color: $greenTheme;
+    border: 3px solid $greenTheme;
+    border-radius: 10px;
+
+    &:hover {
+        color: $greenTheme;
+        border: 3px solid $greenTheme;
+        background-color: $lightWhite;
+        transition-duration: 0.4s;
+    }
+  } 
+}
+
+
+/*table*/
+table {
+  font-family: $fontletter;
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    background-color: $lightWhite;
+    border-left: 3px solid $greenTheme;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    text-align: center;
+    padding: 7px;
+  }
+
+  tr {
+    text-align: center;
+  }
+}

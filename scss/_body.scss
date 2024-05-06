@@ -1,0 +1,286 @@
+  .grid-item {
+    margin: 10px;
+    box-shadow: 0px 0px 12px #0001;
+    background-color: #ededed54;
+  }
+
+  /* este es el container de index */
+  .index-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header header"
+      "section1 section2"
+      "section1 section3"
+      "footer footer";
+
+    @media screen and (max-width: 1080px) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "footer";
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "footer";
+    }
+
+    /* section1 de index */
+    .section1 {
+      grid-area: section1;
+      display: flex;
+      flex-direction: column;
+
+      .carousel-inner {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #5e5e00a4;
+      }
+    }
+
+    /* section2 de index */
+    .section2 {
+      grid-area: section2;
+      height: auto;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        li {
+          text-align: center;
+
+          a {
+            font-family: "Montserrat", sans-serif;
+            border: solid $greenTheme 1px;
+            border-radius: 20px;
+            padding: 4px;
+            text-decoration: none;
+            color: $greenTheme;
+            font-weight: bold;
+            font-size: 0.875rem;
+            font-style: normal;
+
+
+            &:hover {
+              color: $strongWhite;
+              background-color: $greenTheme;
+              transition-duration: 0.4s;
+            }
+          }
+        }
+
+        div {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          margin-top: 2vh;
+
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+
+    /* section3 de index */
+    .section3 {
+      grid-area: section3;
+      display: flex;
+      flex-direction: column;
+
+      .maps-box {
+        margin-top: 20px;
+        align-self: center;
+      }
+    }
+
+    .section3 {
+      grid-area: section3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .maps-box {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  /* este es el contenedor de adopcion */
+  .adopcion-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "adopcion-section1"
+      "adopcion-section2"
+      "adopcion-section3"
+      "footer";
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "adopcion-section1"
+        "adopcion-section2"
+        "adopcion-section3"
+        "footer";
+    }
+
+    @media screen and (max-width: 480px) {
+      display: grid;
+    }
+  }
+
+
+  /* esta es el ocntenedor de Colaboración */
+  .colaboracion-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "colaboracion-section1"
+      "colaboracion-section2"
+      "colaboracion-section3"
+      "footer";
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "colaboracion-section1"
+        "colaboracion-section2"
+        "colaboracion-section3"
+        "footer";
+    }
+
+    @media screen and (max-width: 480px) {
+      display: grid;
+    }
+  }
+
+  .colaboracion-section2 {
+    border-bottom: 3px solid $greenTheme;
+    margin-bottom: 50px;
+
+    .ul-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    ul {
+      padding: 10px;
+      border-left: 3px solid $greenTheme;
+      font-family: $fontletter;
+      text-align: left;
+    }
+  }
+
+  .colaboracion-section3 {
+    .ul-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    ul {
+      padding: 10px;
+      border-left: 3px solid $greenTheme;
+      font-family: $fontletter;
+      text-align: left;
+    }
+  }
+
+  /* esto es el contenedor de Padrino */
+  .padrino-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "padrino-section1"
+      "padrino-section2"
+      "padrino-section3"
+      "footer";
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "padrino-section1"
+        "padrino-section2"
+        "padrino-section3"
+        "footer";
+    }
+
+    @media screen and (max-width: 480px) {
+      display: grid;
+    }
+  }
+
+  .padrino-section2 {
+    border-bottom: 3px solid $greenTheme;
+    margin-bottom: 50px;
+  }
+
+  /* esto es el contenedor de Contacto */
+  .contacto-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "contacto-section1"
+      "contacto-section2"
+      "contacto-section3"
+      "contacto-section4"
+      "footer";
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "contacto-section1"
+        "contacto-section2"
+        "contacto-section3"
+        "contacto-section4"
+        "footer";
+    }
+
+    @media screen and (max-width: 480px) {
+      display: grid;
+    }
+  }

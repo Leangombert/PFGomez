@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description="
+        content="Protectora de animales es una pagina donde se puede apoyar la causa de perros sin hogar, teniendo asi la oportunidad de colaborar, donar, ser un hogar transitorio y adoptar">
+    <meta name="keywords"
+        content="PROTECTORA DE ANIMALES, PERROS, PERRITOS, ADOPTAR, HOGAR TRANSITORIO, TIENDA, COLABORAR, DONAR, MONTEVIDEO, URUGUAY">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,8 +20,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="../images/pa.ico">
-    <title>Protectora</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Protectora de Animales</title>
 
 <body class="padrino-container">
 
@@ -33,7 +37,7 @@
             <li><a href="https://www.gmail.com/" target="_blank"><img src="../images/mail-icon.png" alt=""></a></li>
         </ol>
         <div class="logo flex-item">
-            <a href="/index.html"><img src="../images/logo-main.png" alt="logo"></a>
+            <a href="../index.html"><img src="../images/logo-main.png" alt="logo"></a>
         </div>
         <h1 class="h1">PROTECTORA DE ANIMALES</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -80,42 +84,64 @@
         </p>
         <form class="form">
             <fieldset>
-                <legend>Formulario</Legend>
+                <legend>
+                    Formulario padrino
+                </Legend>
 
-                <label for="name">Nombre:</label>
-                <input class="form-input" type="text">
+                <div class="form-input">
+                    <label for="name">Nombre:</label>
+                    <input type="text" placeholder="Tu respuesta" required>
+                </div>
 
+                <div class="form-input">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" placeholder="Tu respuesta" required>
+                </div>
 
-                <label for="surname">Apellido:</label>
-                <input class="form-input" type="text">
+                <div class="form-input">
+                    <label for="email">Email:</label>
+                    <input type="email" required placeholder="example@mail.com">
+                </div>
 
+                <div class="form-input">
+                    <label for="telephone">Telefono/Celular:</label>
+                    <input type="number" placeholder="Tu respuesta" required>
+                </div>
 
-                <label for="email">Email:</label>
-                <input class="form-input" type="email" placeholder="example@mail.com">
+                <div class="form-input">
+                    <label for="credit card">Elige tarjeta de credito:</label>
+                    <select name="Tarjeta de credito" id="">
+                        <option value="Visa" name="credit card">Visa</option>
+                        <option value="Mastercard" name="credit card">Mastercard</option>
+                        <option value="OCA" name="credit card">OCA</option>
+                        <option value="Prex" name="credit card">Prex</option>
+                        <option value="Cabal" name="credit card">Cabal</option>
+                    </select>
+                </div>
 
+                <div class="form-input">
+                    <label for="credit card number">Numero de tarjeta de credito:</label>
+                    <input type="number" required placeholder="****-****-****-****">
+                </div>
 
-                <label for="telephone">Telefono/Celular:</label>
-                <input class="form-input" type="number">
+                <div class="form-input">
+                    <label for="vencimiento">Fecha de Vencimiento:</label>
+                    <input type="date" required>
+                </div>
 
+                <div class="form-input">
+                    <label for="import">Importe mensual a donar (USD):</label>
+                    <input type="number" placeholder="Tu respuesta" required>
+                </div>
 
-                <label for="credit card">Elige tarjeta de credito:</label>
-                <select class="form-input" name="Tarjeta de credito" id="">
-                    <option value="Visa" name="credit card">Visa</option>
-                    <option value="Mastercard" name="credit card">Mastercard</option>
-                    <option value="OCA" name="credit card">OCA</option>
-                    <option value="Prex" name="credit card">Prex</option>
-                    <option value="Cabal" name="credit card">Cabal</option>
-                </select>
-                <label for="credit card number">Numero de tarjeta de credito:</label>
-                <input class="form-input" type="number" placeholder="****-****-****-****">
-                <label for="vencimiento">Fecha de Vencimiento:</label>
-                <input class="form-input" type="date">
-                <label for="import">Importe mensual a donar (USD):</label>
-                <input class="form-input" type="number">
-                <label for="recibe information">¿Desea recibir informacion sobre nuestro trabajo y como tu donacion esta
-                    ayudando?:</label>
-                <input type="radio" name="recibe information" value="yes">Si
-                <input type="radio" name="recibe information" value="no">No
+                <div class="form-input">
+                    <label for="recibe information">¿Desea recibir informacion sobre nuestro trabajo y como tu donacion
+                        esta
+                        ayudando?:</label>
+                    <input type="radio" required name="recibe information" value="yes">Si
+                    <input type="radio" required name="recibe information" value="no">No
+                </div>
+
                 <input class="form-button" type="submit" value="Enviar">
                 <input class="form-button" type="reset" value="Borrar datos">
             </fieldset>
@@ -141,65 +167,86 @@
         <p class="paragraph">
             En nuestro camino de ayudar a mascotas sin hogar, estamos buscando personas compasivas y dedicadas que estén
             dispuestas a abrir sus hogares como refugio temporal para
-            nuestros amigos peludos. Ser un hogar temporal es una experiencia gratificante que salva vidas y brinda amor y cuidado a animales necesitados hasta que encuentren un hogar
+            nuestros amigos peludos. Ser un hogar temporal es una experiencia gratificante que salva vidas y brinda amor
+            y cuidado a animales necesitados hasta que encuentren un hogar
             permanente.
         </p>
-            <p class="paragraph">
-                Como hogar temporal, te comprometes a brindarles a estas mascotas un ambiente amoroso, alimentación adecuada, atención veterinaria cuando sea necesario y mucho cariño durante su estadía contigo. Puede ser por un período corto o largo, dependiendo de la situación de cada
-                mascota.
-            </p>
-            <p class="paragraph"><strong>¡Cada hogar temporal marca la diferencia en la vida de estos animales!</strong>  Si estás interesado en convertirte en un héroe para una mascota sin refugio, por favor completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
-            </p>
-        <h4 class="subtitles-h4">Formulario para padrino transitorio</h4>
+        <p class="paragraph">
+            Como hogar temporal, te comprometes a brindarles a estas mascotas un ambiente amoroso, alimentación
+            adecuada, atención veterinaria cuando sea necesario y mucho cariño durante su estadía contigo. Puede ser por
+            un período corto o largo, dependiendo de la situación de cada
+            mascota.
+        </p>
+        <p class="paragraph"><strong>¡Cada hogar temporal marca la diferencia en la vida de estos animales!</strong> Si
+            estás interesado en convertirte en un héroe para una mascota sin refugio, por favor completa el siguiente
+            formulario y nos pondremos en contacto contigo lo antes posible.
+        </p>
+
         <form class="form">
-            <div>
-                <label for="name">Nombre:</label>
-                <input class="form-input" type="text">
-            </div>
-            <div>
-                <label for="surname">Apellido:</label>
-                <input class="form-input" type="text">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input class="form-input" type="email" placeholder="example@mail.com">
-            </div>
-            <div>
-                <label for="telephone">Telefono/Celular:</label>
-                <input class="form-input" type="number">
-            </div>
-            <div>
-                <label for="adress">Direccion:</label>
-                <input class="form-input" type="adress">
-            </div>
-            <div>
-                <label for="number adress">Numero de puerta:</label>
-                <input class="form-input" type="number">
-            </div>
-            <div>
-                <label for="experience">¿Tienes experiencia previa como hogar transitorio?:</label>
-                <input type="radio" name="experience" value="yes">Si
-                <input type="radio" name="experience" value="no">No
-            </div>
-            <div>
-                <label for="experience">¿Tienes otras mascotas en tu hogar?:</label>
-                <input type="radio" name="experience" value="yes">Si
-                <input type="radio" name="experience" value="no">No
-                <textarea name="requirements" class="text-area" placeholder=""></textarea>
-            </div>
-            <div>
-                <label for="tranistory time">¿Cuanto tiempo puedes dedicar como hogar transitorio?:</label>
-                <textarea name="requirements" class="text-area" placeholder="Días, meses, años"></textarea>
-            </div>
-            <div>
-                <label for="requirements">¿Tienes algun requisito para la mascotas que estas dispuesto a
-                    cuidar?:</label>
-                <textarea name="requirements" class="text-area" placeholder="Edad, sexo, tamaño, etc"></textarea>
-            </div>
-            <div>
-                <input class="form-input form-button" type="submit" value="Enviar">
-                <input class="form-input form-button" type="reset" value="Borrar datos">
-            </div>
+            <fieldset>
+                <legend>
+                    Formulario hogar transitorio
+                </legend>
+                <div class="form-input">
+                    <label for="name-transit">Nombre:</label>
+                    <input id="name-transit" placeholder="Tu respuesta" required type="text">
+                </div>
+
+                <div class="form-input">
+                    <label for="surname-transit">Apellido:</label>
+                    <input id="surname-transit" placeholder="Tu respuesta" required type="text">
+                </div>
+
+                <div class="form-input">
+                    <label for="email-transit">Email:</label>
+                    <input id="email-transit" type="email" placeholder="example@mail.com">
+                </div>
+
+                <div class="form-input">
+                    <label for="telephone-transit">Telefono/Celular:</label>
+                    <input id="telephone-transit" placeholder="Tu respuesta" required type="number">
+                </div>
+
+                <div class="form-input">
+                    <label for="adress-transit">Direccion:</label>
+                    <input id="adress-transit" placeholder="Tu respuesta" required type="adress">
+                </div>
+
+                <div class="form-input">
+                    <label for="number-adress-transit">Numero de puerta:</label>
+                    <input id="number-adress-transit" placeholder="Tu respuesta" required type="number">
+                </div>
+
+                <div class="form-input">
+                    <label for="experience">¿Tienes experiencia previa como hogar transitorio?:</label>
+                    <input type="radio" name="experience" value="yes">Si
+                    <input type="radio" name="experience" value="no">No
+                </div>
+
+                <div class="form-input">
+                    <label for="experience">¿Tienes otras mascotas en tu hogar?:</label>
+                    <input type="radio" name="experience" value="yes">Si
+                    <input type="radio" name="experience" value="no">No
+                    <textarea name="requirements" class="text-area"
+                        placeholder="Si tu respuesta es (SI) indica cuales y cuantas"></textarea>
+                </div>
+
+                <div class="form-input">
+                    <label for="tranistory time">¿Cuanto tiempo puedes dedicar como hogar transitorio?:</label>
+                    <textarea name="requirements" class="text-area" placeholder="Días, meses, años"></textarea>
+                </div>
+
+                <div class="form-input">
+                    <label for="requirements">¿Tienes algun requisito para la mascotas que estas dispuesto a
+                        cuidar?:</label>
+                    <textarea name="requirements" class="text-area" placeholder="Edad, sexo, tamaño, etc"></textarea>
+                </div>
+
+                <div>
+                    <input class=form-button type="submit" value="Enviar">
+                    <input class=form-button type="reset" value="Borrar datos">
+                </div>
+            </fieldset>
         </form>
     </div>
 
