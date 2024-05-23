@@ -27,6 +27,16 @@
         "section2"
         "section3"
         "footer";
+        
+        .section1 {
+          carousel-inner {
+          margin-top: 20px;
+          padding: 10px;
+          background-color: #5e5e00a4;
+          width: 350px;
+          height: 300px;
+        }
+      }
     }
 
     @media screen and (max-width: 480px) {
@@ -40,6 +50,15 @@
         "section2"
         "section3"
         "footer";
+        .section1 {
+          carousel-inner {
+          margin-top: 20px;
+          padding: 10px;
+          background-color: #5e5e00a4;
+          width: 350px;
+          height: 300px;
+        }
+      }
     }
 
     /* section1 de index */
@@ -170,7 +189,7 @@
       "colaboracion-section3"
       "footer";
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1080px) {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto auto auto auto auto;
@@ -180,6 +199,38 @@
         "colaboracion-section2"
         "colaboracion-section3"
         "footer";
+        .colaboracion-section2 {
+          border-bottom: 3px solid $greenTheme;
+          margin-bottom: 50px;
+      
+          .ul-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+      
+          ul {
+            padding: 10px;
+            border-left: 3px solid $greenTheme;
+            font-family: $fontletter;
+            text-align: left;
+          }
+        }
+      
+        .colaboracion-section3 {
+          .ul-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+      
+          ul {
+            padding: 10px;
+            border-left: 3px solid $greenTheme;
+            font-family: $fontletter;
+            text-align: left;
+          }
+        }
     }
 
     @media screen and (max-width: 480px) {
